@@ -1,0 +1,18 @@
+services:
+  submit:
+    image: bitnami/spark:3.5.1
+    working_dir: /app
+    user: "${UID}:${GID}"
+    volumes:
+      - ./:/app:rw
+    environment:
+      - SPARK_DRIVER_MEMORY=512m
+      - SPARK_EXECUTOR_MEMORY=64m
+    entrypoint:
+      - spark-submit
+      - --master
+      # - local-cluster[2,2,512]
+      - local[*]
+      - --conf
+      - spark.jars.ivy=/tmp/.ivy2
+      - /app/main.py
