@@ -1,0 +1,602 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "a9942dfe-8f43-43eb-bd00-6595ec0087b3",
+  "location" : "/home/iceberg/warehouse/nba/player_salaries",
+  "last-sequence-number" : 17,
+  "last-updated-ms" : 1765385885643,
+  "last-column-id" : 6,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "player_name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "salary",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 3,
+      "name" : "season_start",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "season_end",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "team",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 6,
+      "name" : "full_team_name",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ {
+      "name" : "season_end",
+      "transform" : "identity",
+      "source-id" : 4,
+      "field-id" : 1000
+    } ]
+  } ],
+  "last-partition-id" : 1000,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "root",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 505824645274043545,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 505824645274043545,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 4188898201469589423,
+    "timestamp-ms" : 1765385876761,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "353",
+      "added-files-size" : "6965",
+      "changed-partition-count" : "1",
+      "total-records" : "353",
+      "total-files-size" : "6965",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-4188898201469589423-1-de12b9f9-d87d-42e3-8240-c1eabe5eb3cb.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 5306140071176338016,
+    "parent-snapshot-id" : 4188898201469589423,
+    "timestamp-ms" : 1765385877480,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "373",
+      "added-files-size" : "7266",
+      "changed-partition-count" : "1",
+      "total-records" : "726",
+      "total-files-size" : "14231",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-5306140071176338016-1-808a90d8-3d42-40fa-9792-84a09e739ed8.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 8282685999238302291,
+    "parent-snapshot-id" : 5306140071176338016,
+    "timestamp-ms" : 1765385878153,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "376",
+      "added-files-size" : "7259",
+      "changed-partition-count" : "1",
+      "total-records" : "1102",
+      "total-files-size" : "21490",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-8282685999238302291-1-6f7df978-2bf2-416a-b6a4-b7991688c7e1.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 5551565614628556445,
+    "parent-snapshot-id" : 8282685999238302291,
+    "timestamp-ms" : 1765385878820,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "394",
+      "added-files-size" : "7489",
+      "changed-partition-count" : "1",
+      "total-records" : "1496",
+      "total-files-size" : "28979",
+      "total-data-files" : "4",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-5551565614628556445-1-25f3151d-87c1-4355-9c4a-6cd3aec99e59.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 5,
+    "snapshot-id" : 1296829410443147284,
+    "parent-snapshot-id" : 5551565614628556445,
+    "timestamp-ms" : 1765385879352,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "335",
+      "added-files-size" : "6804",
+      "changed-partition-count" : "1",
+      "total-records" : "1831",
+      "total-files-size" : "35783",
+      "total-data-files" : "5",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-1296829410443147284-1-0ba068ac-5339-47a8-932c-86fe8df7cd65.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 6,
+    "snapshot-id" : 820410969656221838,
+    "parent-snapshot-id" : 1296829410443147284,
+    "timestamp-ms" : 1765385879859,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "375",
+      "added-files-size" : "7351",
+      "changed-partition-count" : "1",
+      "total-records" : "2206",
+      "total-files-size" : "43134",
+      "total-data-files" : "6",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-820410969656221838-1-a7dcc2a8-44c0-4c27-9708-c861b59c8121.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 7,
+    "snapshot-id" : 2271362628903240164,
+    "parent-snapshot-id" : 820410969656221838,
+    "timestamp-ms" : 1765385880360,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "386",
+      "added-files-size" : "7478",
+      "changed-partition-count" : "1",
+      "total-records" : "2592",
+      "total-files-size" : "50612",
+      "total-data-files" : "7",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-2271362628903240164-1-96350ee3-24c5-4269-abb1-4120debac28c.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 8,
+    "snapshot-id" : 4960263577221154062,
+    "parent-snapshot-id" : 2271362628903240164,
+    "timestamp-ms" : 1765385880867,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "384",
+      "added-files-size" : "7537",
+      "changed-partition-count" : "1",
+      "total-records" : "2976",
+      "total-files-size" : "58149",
+      "total-data-files" : "8",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-4960263577221154062-1-4f07eb65-f58a-425f-86eb-01845591a25e.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 9,
+    "snapshot-id" : 3243544854522584443,
+    "parent-snapshot-id" : 4960263577221154062,
+    "timestamp-ms" : 1765385881342,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "373",
+      "added-files-size" : "7270",
+      "changed-partition-count" : "1",
+      "total-records" : "3349",
+      "total-files-size" : "65419",
+      "total-data-files" : "9",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-3243544854522584443-1-05e2e38b-75ce-4c69-b35c-343fd155cb70.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 10,
+    "snapshot-id" : 2704468263389759415,
+    "parent-snapshot-id" : 3243544854522584443,
+    "timestamp-ms" : 1765385881894,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "351",
+      "added-files-size" : "7135",
+      "changed-partition-count" : "1",
+      "total-records" : "3700",
+      "total-files-size" : "72554",
+      "total-data-files" : "10",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-2704468263389759415-1-538da1f1-b3f1-4c5d-af6b-c35e5064affa.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 11,
+    "snapshot-id" : 5703305970424900535,
+    "parent-snapshot-id" : 2704468263389759415,
+    "timestamp-ms" : 1765385882458,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "417",
+      "added-files-size" : "7861",
+      "changed-partition-count" : "1",
+      "total-records" : "4117",
+      "total-files-size" : "80415",
+      "total-data-files" : "11",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-5703305970424900535-1-3769489d-2897-4e9f-bb22-4acf30cd951a.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 12,
+    "snapshot-id" : 9159656738937576558,
+    "parent-snapshot-id" : 5703305970424900535,
+    "timestamp-ms" : 1765385883019,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "459",
+      "added-files-size" : "8707",
+      "changed-partition-count" : "1",
+      "total-records" : "4576",
+      "total-files-size" : "89122",
+      "total-data-files" : "12",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-9159656738937576558-1-c58aba77-237c-4157-8455-77fa86547433.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 13,
+    "snapshot-id" : 2606763640749640085,
+    "parent-snapshot-id" : 9159656738937576558,
+    "timestamp-ms" : 1765385883495,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "430",
+      "added-files-size" : "8389",
+      "changed-partition-count" : "1",
+      "total-records" : "5006",
+      "total-files-size" : "97511",
+      "total-data-files" : "13",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-2606763640749640085-1-4889e63b-ac25-4f96-b9d6-a5699f45e0e2.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 14,
+    "snapshot-id" : 2949914464712356385,
+    "parent-snapshot-id" : 2606763640749640085,
+    "timestamp-ms" : 1765385884085,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "413",
+      "added-files-size" : "8185",
+      "changed-partition-count" : "1",
+      "total-records" : "5419",
+      "total-files-size" : "105696",
+      "total-data-files" : "14",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-2949914464712356385-1-f68cf15c-c080-4feb-bcdd-e7772c723423.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 15,
+    "snapshot-id" : 3725015407138442522,
+    "parent-snapshot-id" : 2949914464712356385,
+    "timestamp-ms" : 1765385884602,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "416",
+      "added-files-size" : "8181",
+      "changed-partition-count" : "1",
+      "total-records" : "5835",
+      "total-files-size" : "113877",
+      "total-data-files" : "15",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-3725015407138442522-1-c8bc086f-5f98-40a2-a575-6419a7aa0c25.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 16,
+    "snapshot-id" : 7449301797890218598,
+    "parent-snapshot-id" : 3725015407138442522,
+    "timestamp-ms" : 1765385885145,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "448",
+      "added-files-size" : "8605",
+      "changed-partition-count" : "1",
+      "total-records" : "6283",
+      "total-files-size" : "122482",
+      "total-data-files" : "16",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-7449301797890218598-1-2905c1e3-bd4b-4263-bf88-e98d532249fe.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 17,
+    "snapshot-id" : 505824645274043545,
+    "parent-snapshot-id" : 7449301797890218598,
+    "timestamp-ms" : 1765385885643,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1765385870902",
+      "added-data-files" : "1",
+      "added-records" : "375",
+      "added-files-size" : "7702",
+      "changed-partition-count" : "1",
+      "total-records" : "6658",
+      "total-files-size" : "130184",
+      "total-data-files" : "17",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1765385870902",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.8.1 (commit 9ce0fcf0af7becf25ad9fc996c3bad2afdcfd33d)"
+    },
+    "manifest-list" : "/home/iceberg/warehouse/nba/player_salaries/metadata/snap-505824645274043545-1-31991c10-59aa-40c6-8f13-a2dd0c40c3da.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1765385876761,
+    "snapshot-id" : 4188898201469589423
+  }, {
+    "timestamp-ms" : 1765385877480,
+    "snapshot-id" : 5306140071176338016
+  }, {
+    "timestamp-ms" : 1765385878153,
+    "snapshot-id" : 8282685999238302291
+  }, {
+    "timestamp-ms" : 1765385878820,
+    "snapshot-id" : 5551565614628556445
+  }, {
+    "timestamp-ms" : 1765385879352,
+    "snapshot-id" : 1296829410443147284
+  }, {
+    "timestamp-ms" : 1765385879859,
+    "snapshot-id" : 820410969656221838
+  }, {
+    "timestamp-ms" : 1765385880360,
+    "snapshot-id" : 2271362628903240164
+  }, {
+    "timestamp-ms" : 1765385880867,
+    "snapshot-id" : 4960263577221154062
+  }, {
+    "timestamp-ms" : 1765385881342,
+    "snapshot-id" : 3243544854522584443
+  }, {
+    "timestamp-ms" : 1765385881894,
+    "snapshot-id" : 2704468263389759415
+  }, {
+    "timestamp-ms" : 1765385882458,
+    "snapshot-id" : 5703305970424900535
+  }, {
+    "timestamp-ms" : 1765385883019,
+    "snapshot-id" : 9159656738937576558
+  }, {
+    "timestamp-ms" : 1765385883495,
+    "snapshot-id" : 2606763640749640085
+  }, {
+    "timestamp-ms" : 1765385884085,
+    "snapshot-id" : 2949914464712356385
+  }, {
+    "timestamp-ms" : 1765385884602,
+    "snapshot-id" : 3725015407138442522
+  }, {
+    "timestamp-ms" : 1765385885145,
+    "snapshot-id" : 7449301797890218598
+  }, {
+    "timestamp-ms" : 1765385885643,
+    "snapshot-id" : 505824645274043545
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1765385874734,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385876761,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385877480,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v3.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385878153,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v4.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385878820,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v5.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385879352,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v6.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385879859,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v7.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385880360,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v8.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385880867,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v9.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385881342,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v10.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385881894,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v11.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385882458,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v12.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385883019,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v13.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385883495,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v14.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385884085,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v15.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385884602,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v16.metadata.json"
+  }, {
+    "timestamp-ms" : 1765385885145,
+    "metadata-file" : "/home/iceberg/warehouse/nba/player_salaries/metadata/v17.metadata.json"
+  } ]
+}
